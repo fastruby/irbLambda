@@ -9,5 +9,7 @@ if [ ! -f .ruby-version ]; then
   echo "Set up .ruby-version..."
   echo ""
 fi
+echo "Bundling..."
+bundle
 echo "All done!"
 echo ""
