@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "Cleaning up..."
+echo ""
+rm -rf function.zip
+echo ""
+echo "Bundling..."
+echo ""
+bundle install --path vendor/bundle
+echo ""
+echo "Packaging..."
+echo ""
+zip -r function.zip *.rb Gemfile Gemfile.lock vendor/bundle/*
+echo ""
+echo "aws lambda update-function-code --function-name irbLambda --zip-file fileb://function.zip"
+echo ""
+aws lambda update-function-code --function-name irbLambda --zip-file fileb://function.zip
