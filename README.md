@@ -2,6 +2,11 @@
 
 A Lambda function to run one line of Ruby at a time
 
+## Limitations
+
+This works only with the standard library. There are no dependencies for this
+function.
+
 ## Requirements
 
 You will need to have AWS credentials for the `./bin/sync` command to work. You
