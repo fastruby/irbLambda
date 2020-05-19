@@ -1,4 +1,4 @@
-# IRB Lambda
+# IRB Lambda [![Build Status](https://travis-ci.org/fastruby/irbLambda.svg?branch=master)](https://travis-ci.org/fastruby/irbLambda)
 
 A Lambda function to run one line of Ruby at a time
 
