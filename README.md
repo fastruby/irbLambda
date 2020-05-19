@@ -9,6 +9,9 @@ function.
 
 ## Requirements
 
+You will need the `awscli` tool installed in your command line. If you are using
+Homebrew, you can run: `brew install awscli`
+
 You will need to have AWS credentials for the `./bin/sync` command to work. You
 can set them up over here:
 
