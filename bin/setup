@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 if [ ! -f .ruby-version ]; then
   echo ""
   echo "Setting up .ruby-version..."
@@ -9,7 +8,9 @@ if [ ! -f .ruby-version ]; then
   echo "Set up .ruby-version..."
   echo ""
 fi
+
 echo "Bundling..."
+rm Gemfile.lock
 bundle
 echo "All done!"
 echo ""
