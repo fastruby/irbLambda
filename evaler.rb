@@ -5,8 +5,6 @@ class Evaler
     original_stdout = $stdout
     $stdout = StringIO.new
 
-    $SAFE=1
-    statement.taint
     result[:return] = eval(statement)
     result[:stdout] = $stdout.string
 
