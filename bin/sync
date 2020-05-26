@@ -12,6 +12,10 @@ echo "Packaging..."
 echo ""
 zip -r function.zip *.rb Gemfile Gemfile.lock vendor/bundle/*
 echo ""
-echo "aws lambda update-function-code --function-name irbLambda --zip-file fileb://function.zip"
+echo "aws lambda update-function-code --function-name irb-ruby-2-7 --zip-file fileb://function.zip"
 echo ""
-aws lambda update-function-code --function-name irbLambda --zip-file fileb://function.zip
+aws lambda update-function-code --function-name irb-ruby-2-7 --zip-file fileb://function.zip
+echo ""
+echo "aws lambda update-function-code --function-name irb-ruby-2-5 --zip-file fileb://function.zip"
+echo ""
+aws lambda update-function-code --function-name irb-ruby-2-5 --zip-file fileb://function.zip
